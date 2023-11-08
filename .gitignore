@@ -1,0 +1,13 @@
+.idea/
+bild/
+dist/
+__pycache__/
+target/
+.env
+.venv
+env/
+venv/
+ENV/
+env.bac/
+venv.bac/
+python_справочник.pdf/
