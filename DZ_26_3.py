@@ -1,6 +1,6 @@
 # 2 задание: класс стека для работы со строками (стек строк)
 def menu():
-    func_menu = [Stack[self.add_item], Stack.pop_item, Stack.score_ctack, Stack.isEmpty, Stack.isFull, Stack.clear_stack, Stack.peek]
+    func_menu = [stack.add_item, stack.pop_item, stack.score_ctack, stack.isEmpty, stack.isFull, stack.clear_stack, stack.peek]
     choice = int(input('1-помещение строки в стек\n'
                        '2-выталкивание строки из стека\n'
                        '3-подсчет количества строк в стеке\n'
@@ -10,21 +10,9 @@ def menu():
                        '7-получение значения без выталкивания верхней строки из стека\n'
                        '0-выход -> '))
     if choice == 0:
-        return
+        return False
     elif 1 <= choice <= 7:
-        return func_menu[choice]
-    # elif choice == 2:
-    #     self.pop_item()
-    # elif choice == 3:
-    #     return self.score_ctack()
-    # elif choice == 4:
-    #     return self.isEmpty()
-    # elif choice == 5:
-    #     return self.isFull()
-    # elif choice == 6:
-    #     return self.clear_stack()
-    # elif choice == 7:
-    #     return self.peek()
+        return func_menu[choice -1]()
     else:
         return f'Такого пункта нет!'
 class Stack:
